@@ -13,7 +13,7 @@ export function renderHome(root) {
   hero.innerHTML = `
     <p class="hero__eyebrow">HargaCerdas &middot; AI Pricing Advisor</p>
     <h1 class="hero__title">Jangan Asal Pasang Harga.</h1>
-    <p class="hero__subtitle">Masukkan detail produkmu, AI menghitung rentang harga wajar, margin keuntungan, dan strategi jual — dalam hitungan detik.</p>
+    <p class="hero__subtitle">Masukkan detail produkmu, AI menghitung rentang harga wajar, margin keuntungan, dan strategi jual dalam hitungan detik.</p>
   `;
   root.appendChild(hero);
 

@@ -4,9 +4,9 @@
 
 **Jangan Asal Pasang Harga.**
 
-AI Pricing & Margin Advisor untuk pelaku UMKM Indonesia — dibangun untuk **IDCamp Developer Challenge #2: Digitalization & Acceleration of MSMEs with Generative AI**.
+AI Pricing & Margin Advisor untuk pelaku UMKM Indonesia, dibangun untuk **IDCamp Developer Challenge #2: Digitalization & Acceleration of MSMEs with Generative AI**.
 
-[Live Demo](#) · [Laporkan Bug](../../issues) · [Project Brief](#project-brief)
+[Live Demo](https://hargacerdas.vercel.app/) · [Laporkan Bug](../../issues) · [Project Brief](#project-brief)
 
 </div>
 
@@ -82,21 +82,6 @@ npm run build     # build production ke folder dist/
 npm run preview   # preview hasil build
 ```
 
-## ☁️ Panduan Deploy (Netlify / Vercel)
-
-**Netlify:**
-1. Push repo ini ke GitHub.
-2. Di Netlify → *Add new site* → *Import from Git* → pilih repo ini.
-3. Build command: `npm run build`, Publish directory: `dist`.
-4. Deploy.
-
-**Vercel:**
-1. Push repo ini ke GitHub.
-2. Di Vercel → *New Project* → import repo.
-3. Framework preset: *Vite* (auto-terdeteksi). Deploy.
-
-> Tidak perlu environment variable apa pun — API key Gemini diinput langsung oleh pengguna di browser.
-
 ## 🧪 Testing Checklist
 
 - [ ] Form menolak submit jika nama produk < 3 karakter
@@ -124,5 +109,5 @@ Proyek ini dibuat untuk kompetisi individu, namun saran & laporan bug tetap terb
 ---
 
 <div align="center">
-Dibuat dengan ❤️ untuk pelaku UMKM Indonesia — IDCamp Developer Challenge #2
+Dibuat dengan ❤️ untuk pelaku UMKM Indonesia — Ardi Wirya Indarto
 </div>
