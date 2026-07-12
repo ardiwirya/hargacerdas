@@ -91,10 +91,4 @@ npm run preview   # preview hasil build
 
 ## 📜 Lisensi
 
-[MIT License](LICENSE) © 2026 Ardi Wirya Indarto
-
----
-
-<div align="center">
-&copy; 2026 HargaCerdas by Ardi Wirya Indarto
-</div>
+[MIT License](LICENSE) &copy; 2026 HargaCerdas by Ardi Wirya
