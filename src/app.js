@@ -25,7 +25,8 @@ export function mountApp(appRoot) {
     </header>
     <main id="main-content" class="page" tabindex="-1"></main>
     <footer class="site-footer">
-      <p>Dibuat untuk IDCamp Developer Challenge #2 &middot; Data tersimpan lokal di perangkatmu, bukan di server.</p>
+      <p>&copy; 2026 HargaCerdas by Ardi Wirya</p>
+      <p><small>Submission IDCamp Developer Challenge #2 &middot; Data tersimpan lokal.</small></p>
     </footer>
   `;
 
