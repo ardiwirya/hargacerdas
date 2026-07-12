@@ -1,24 +1,26 @@
 <div align="center">
 
-# 🧾 HargaCerdas
+# HargaCerdas
 
 **Jangan Asal Pasang Harga.**
 
 AI Pricing & Margin Advisor untuk pelaku UMKM Indonesia, dibangun untuk **IDCamp Developer Challenge #2: Digitalization & Acceleration of MSMEs with Generative AI**.
 
-[Live Demo](https://hargacerdas.vercel.app/) · [Laporkan Bug](../../issues) · [Project Brief](#project-brief)
+[Live Demo](https://hargacerdas.vercel.app/) · [Laporkan Bug](../../issues) · [Project Brief](https://docs.google.com/document/d/1pRFVWhHqAukP9U_6fq0nyR4-QhxuRadM91pj_DPlaKo/edit?tab=t.0)
 
 </div>
 
----
+Preview: 
 
-## 📌 Latar Belakang
+![Screencapture](./docs/screenshots/home-empty.png)
 
-64 juta pelaku UMKM menyumbang 60% PDB Indonesia, tapi sebagian besar masih menentukan harga jual secara asal — ikut-ikutan kompetitor atau sekadar tebak-tebak, tanpa mempertimbangkan margin keuntungan yang sehat. Akibatnya: profit tipis, atau kalah bersaing tanpa tahu sebabnya.
+## Latar Belakang
 
-**HargaCerdas** menyelesaikan masalah ini dengan AI generatif: masukkan nama produk, kategori, dan harga pokok produksi (HPP), AI akan menghasilkan rentang harga pasar yang wajar, rekomendasi harga jual, breakdown margin di beberapa skenario, serta strategi positioning — dalam hitungan detik, dan sepenuhnya gratis.
+64 juta pelaku UMKM menyumbang 60% PDB Indonesia, tapi sebagian besar masih menentukan harga jual secara asal ikut-ikutan kompetitor atau sekadar tebak-tebak, tanpa mempertimbangkan margin keuntungan yang sehat. Akibatnya: profit tipis, atau kalah bersaing tanpa tahu sebabnya.
 
-## ✨ Fitur
+**HargaCerdas** menyelesaikan masalah ini dengan AI generatif: masukkan nama produk, kategori, dan harga pokok produksi (HPP), AI akan menghasilkan rentang harga pasar yang wajar, rekomendasi harga jual, breakdown margin di beberapa skenario, serta strategi positioning dalam hitungan detik, dan sepenuhnya gratis.
+
+## Fitur
 
 - **Analisis harga berbasis AI** — Generative AI (Gemini) menganalisis kategori, HPP, dan deskripsi produk untuk merekomendasikan harga jual dengan justifikasi berbahasa natural.
 - **Breakdown margin otomatis** — 3 skenario harga (Ekonomis / Kompetitif / Premium) dihitung otomatis dari HPP.
@@ -28,29 +30,22 @@ AI Pricing & Margin Advisor untuk pelaku UMKM Indonesia, dibangun untuk **IDCamp
 - **Aksesibel** — navigasi keyboard penuh, focus ring terlihat, label ARIA, kontras warna sesuai WCAG AA.
 - **Mobile-first & ringan** — bundle JS ~7 KB gzip, tanpa framework berat.
 
-## 🖼️ Screenshot
-
-> Simpan tangkapan layar berikut di folder `docs/screenshots/` sebelum submit:
-> 1. `home-empty.png` — halaman utama (form kosong), mobile
-> 2. `home-result.png` — hasil analisis (struk) tampil, mobile
-> 3. `history.png` — halaman riwayat, mobile
-> 4. `desktop-home.png` — halaman utama, desktop
-
 ## 🛠️ Tech Stack
 
 | Layer | Teknologi | Alasan |
 |---|---|---|
 | Build tool | [Vite](https://vitejs.dev) | Dev server cepat, output production kecil, native ES Modules |
 | UI | HTML + CSS murni + Vanilla JS (ES Modules) | Tidak overkill untuk scope MVP, performa maksimal, mudah diaudit |
-| AI | [Google Gemini API](https://ai.google.dev) (`gemini-2.0-flash`) | Free tier memadai untuk demo, mendukung structured JSON output |
+| AI | [Google Gemini API](https://ai.google.dev) (`gemini-3.5-flash', 'gemini-3.1-flash-lite`) | Free tier memadai untuk demo, mendukung structured JSON output |
 | Storage | IndexedDB (native) | Riwayat analisis persisten di perangkat, tanpa backend |
 | PWA | `vite-plugin-pwa` | Installable, offline shell |
-| Deployment | Netlify / Vercel | Static hosting gratis, auto-deploy dari GitHub |
+| Deployment | Vercel | Static hosting gratis, auto-deploy dari GitHub |
 
 ## 📂 Struktur Proyek
 
 ```
 hargacerdas/
+├── docs/                 # project brief, screenshots app
 ├── public/                 # favicon, ikon PWA, robots.txt
 ├── src/
 │   ├── components/         # UI components (form, result card, toast, dll.)
@@ -66,7 +61,7 @@ hargacerdas/
 └── package.json
 ```
 
-## 🚀 Menjalankan Secara Lokal
+## Menjalankan Secara Lokal
 
 ```bash
 git clone https://github.com/ardiwirya/hargacerdas.git
@@ -94,14 +89,6 @@ npm run preview   # preview hasil build
 - [ ] Responsive: form & struk tetap terbaca di layar 360px
 - [ ] PWA: `manifest.webmanifest` & service worker ter-generate saat build
 
-## 📄 Project Brief
-
-Lihat dokumen Project Brief lengkap (masalah, solusi, target pengguna, tech stack, dampak) di: `docs/Project-Brief-HargaCerdas.pdf` — link Google Docs dapat dibagikan terpisah saat submission.
-
-## 🤝 Kontribusi
-
-Proyek ini dibuat untuk kompetisi individu, namun saran & laporan bug tetap terbuka lewat [Issues](../../issues).
-
 ## 📜 Lisensi
 
 [MIT License](LICENSE) © 2026 Ardi Wirya Indarto
@@ -109,5 +96,5 @@ Proyek ini dibuat untuk kompetisi individu, namun saran & laporan bug tetap terb
 ---
 
 <div align="center">
-Dibuat dengan ❤️ untuk pelaku UMKM Indonesia — Ardi Wirya Indarto
+&copy; 2026 HargaCerdas by Ardi Wirya Indarto
 </div>
