@@ -66,7 +66,7 @@ export function renderProductForm(onSubmit) {
         </p>
         <div class="field">
           <label for="apiKey">Gemini API Key</label>
-          <input type="password" id="apiKey" name="apiKey" placeholder="AIza..." value="${savedKey}" autocomplete="off" />
+          <input type="password" id="apiKey" name="apiKey" placeholder="AQ..." value="${savedKey}" autocomplete="off" />
           <p class="field__error" id="apiKey-error" role="alert"></p>
         </div>
       </details>
