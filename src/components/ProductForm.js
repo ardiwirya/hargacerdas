@@ -61,7 +61,7 @@ export function renderProductForm(onSubmit) {
       <details class="api-key-panel" ${savedKey ? '' : 'open'}>
         <summary>Pengaturan API Key AI ${savedKey ? '✅' : ''}</summary>
         <p class="api-key-panel__hint">
-          HargaCerdas berjalan tanpa server — kamu perlu API key Gemini gratis milikmu sendiri, tersimpan hanya di perangkatmu.
+          HargaCerdas berjalan tanpa server kamu perlu API key Gemini gratis milikmu sendiri, tersimpan hanya di perangkatmu.
           <a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener noreferrer">Dapatkan API key gratis di sini ↗</a>
         </p>
         <div class="field">
